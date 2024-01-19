@@ -1,0 +1,10 @@
+// Training JS #28: methods of arrayObject---every() and some()
+
+function mirrorImage(arr){
+    for(let i=0;i<arr.length-1;i++){
+    if(arr[i].toString().split('').reverse().join('') === arr[i+1].toString()) {
+    return [arr[i],arr[i+1]];}
+  }
+  return [-1,-1]
+  
+}
